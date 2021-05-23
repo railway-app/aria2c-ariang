@@ -15,4 +15,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: aria2 install
         run: |
-          docker build -t Dockerfile
+          bash setup.sh
+          yarn
+          bash start.sh
